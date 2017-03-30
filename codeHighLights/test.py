@@ -1,3 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 from logHighLight import *
-printInfo("haha")
+logger = Logger("Info") # Four levels for Error, Warn, Info, Debug
+logger.printInfo("haha")
+logger.printDebug("keke")
+logger.printError("wuwu")
+logger.printWarn("aa")
